@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>CSCI5117 Session03 Website - Husky Fan Club! My super cool amazing website, ultra deluxe edition </title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="static/main.js"></script>
+</head>
+
+<body>
+  <h1>Welcome, {{ username }}</h1>
+
+  {% if user == "unknown" %}
+  <p> I don't think I know who you are. Could you throw a <pre>?userName=something</pre> at the end of the old url there for me? </p>
+  {% endif %}
+
+  <h1>Welcome to Husky Fan Club</h1>
+  <h1>Siberian Husky</h1>
+  <p>
+    The Siberian Husky is a medium-sized working sled dog breed. The breed
+    belongs to the Spitz genetic family. It is recognizable by its thickly
+    furred double coat, erect triangular ears, and distinctive markings, and
+    is smaller than the similar-looking Alaskan Malamute.
+  </p>
+  <h2>Fans:</h2>
+  <ul id="nameList">
+    <li>{{ username }}</li>
+  </ul>
+
+
+  <ul>
+    <li>This is S23 CSCI5117 Session 03 Work</li>
+    <li>
+      <a href="https://www.akc.org/dog-breeds/siberian-husky/"
+        >Visit AKC Siberian Husky website!</a
+      >
+    </li>
+    <img src="/static/Siberian-Husky-dog.webp" alt="" />
+  </ul>
+</body>
+</html>
